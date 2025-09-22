@@ -2,6 +2,14 @@ body {
     padding: 25px;
 }
 
+select {
+  margin: 20px;
+}
+
+button {
+  margin: 20px;
+}
+
 .hidden {
     display: none;
 }
@@ -128,19 +136,19 @@ body {
     z-index: 4;
 }
 
-#big-circle {
+#big-circle-overlay {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  background-color: #f1f1f1;
   left: 50%;
-  bottom: 12.5%;
+  bottom: 25%;
   transform: translateX(-50%);
   z-index: -1;
+  background: #f1f1f1;
 }
 
-#big-circle-overlay {
+#big-circle-overlay1 {
   position: absolute;
   width: 300px;
   height: 300px;
@@ -149,6 +157,30 @@ body {
   bottom: 12.5%;
   transform: translateX(-50%);
   z-index: -2;
+  background: conic-gradient(rgb(0, 0, 0) 0%, transparent 0%);
+}
+
+#big-circle-overlay2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  left: 50%;
+  bottom: 12.5%;
+  transform: translateX(-50%);
+  z-index: -3;
+  background: conic-gradient(rgb(0, 0, 0) 0%, transparent 0%);
+}
+
+#big-circle-overlay3 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  left: 50%;
+  bottom: 12.5%;
+  transform: translateX(-50%);
+  z-index: -4;
   background: conic-gradient(rgb(0, 0, 0) 0%, transparent 0%);
 }
 
