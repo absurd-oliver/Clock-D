@@ -8,6 +8,11 @@ const overlay2 = document.getElementById('big-circle-overlay2');
 const overlay3 = document.getElementById('big-circle-overlay3');
 const colorChosen = document.getElementById('colorChosen');
 const selectBox = document.getElementById('selectBox');
+const redInput = document.getElementById('redInput');
+const greenInput = document.getElementById('greenInput');
+const blueInput = document.getElementById('blueInput');
+const colorDiv = document.getElementById('colorDiv');
+const showColorChoose = document.getElementById('showColorChoose');
 
 
 var seconds = 0;
@@ -25,9 +30,19 @@ var gradientPercentageGoal1 = 13;
 var gradientPercentageGoal2 = 27;
 var gradientPercentageGoal3 = 41;
 
-var grad1Color = '#fc0303';
-var grad2Color = '#0ffc03';
-var grad3Color = '#0345fc';
+var grad1Color = 'rgb(50,50,50)';
+var grad2Color = 'rgb(100,50,10")';
+var grad3Color = 'rgb(25,100,100)';
+
+var r1 = 0;
+var r2 = 0;
+var r3 = 0;
+var g1 = 0;
+var g2 = 0;
+var g3 = 0;
+var b1 = 0;
+var b2 = 0;
+var b3 = 0;
 
 
 showTime();
@@ -68,10 +83,44 @@ function showTime(h,m,s){
 }
 
 function setGradient(){
+grad1Color = `rgb(${r1},${g1},${b1})`;
+grad2Color = `rgb(${r2},${g2},${b2})`;
+grad3Color = `rgb(${r3},${g3},${b3})`;
+
   overlay1.style.background = `conic-gradient(${grad1Color} ${gradientPercentage1}%, transparent ${gradientPercentage1}%)`;
   overlay2.style.background = `conic-gradient(${grad2Color} ${gradientPercentage2}%, transparent ${gradientPercentage2}%)`;
   overlay3.style.background = `conic-gradient(${grad3Color} ${gradientPercentage3}%, transparent ${gradientPercentage3}%)`;
 }
+
+
+
+redInput.addEventListener('input', () => {
+r1 = redInput.value;
+setGradient();
+});
+
+greenInput.addEventListener('input', () => {
+g1 = greenInput.value;
+setGradient();
+});
+
+blueInput.addEventListener('input', () => {
+b1 = blueInput.value;
+setGradient();
+});
+
+var toggle = false;
+showColorChoose.addEventListener('click',() => {
+if(!toggle){
+colorDiv.classList.remove('hidden');
+toggle = true;
+} else {
+colorDiv.classList.add('hidden');
+toggle = false;
+}
+});
+
+
 
 
 
