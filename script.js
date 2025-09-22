@@ -2,6 +2,7 @@ const hourHand = document.getElementById("hour-hand");
 const minuteHand = document.getElementById("minute-hand");
 const secondHand = document.getElementById("second-hand");
 const clockTimeDisplay = document.getElementById("clockTimeDisplay");
+const choresGradientTimeDisplay = document.getElementById("choresGradientTimeDisplay");
 const overlay1 = document.getElementById('big-circle-overlay1');
 const overlay2 = document.getElementById('big-circle-overlay2');
 const overlay3 = document.getElementById('big-circle-overlay3');
@@ -20,9 +21,9 @@ var gradientPercentage1 = 0;
 var gradientPercentage2 = 0;
 var gradientPercentage3 = 0;
 
-var gradientPercentageGoal1 = 10;
-var gradientPercentageGoal2 = 20;
-var gradientPercentageGoal3 = 30;
+var gradientPercentageGoal1 = 13;
+var gradientPercentageGoal2 = 27;
+var gradientPercentageGoal3 = 41;
 
 var grad1Color = '#fc0303';
 var grad2Color = '#0ffc03';
@@ -63,6 +64,7 @@ function setRotation(hand, rotation) {
 
 function showTime(h,m,s){
   clockTimeDisplay.innerHTML = `${h}:${m}:${s}`;
+  choresGradientTimeDisplay.innerHTML = `${gradientPercentageGoal1}m, ${gradientPercentageGoal2}m, ${gradientPercentageGoal3}m`;
 }
 
 function setGradient(){
