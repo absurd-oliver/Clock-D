@@ -7,13 +7,20 @@
 </head>
 
 <body>
-  <p id='clockTimeDisplay'>0:00:00</p><p id="choresGradientTimeDisplay">0m, 0m, 0m</p>
-<p id='showColorChoose'> change color</p>
-<div id='colorDiv' class='hidden'>
-<input id='redInput' type='range' min='0' max='255' value='0'>
-<input id='greenInput' type='range' min='0' max='255' value='0'>
-<input id='blueInput' type='range' min='0' max='255' value='0'>
-</div>
+  <button id="redirect" onclick="settings()">settings</button>
+  <h1 id="spantexts">
+    <span id="spanText0">wake up</span>
+    <span> | </span>
+    <span id="spanText1">get dressed</span>
+    <span> | </span>
+    <span id="spanText2">breakfast</span>
+    <span> | </span>
+    <span id="spanText3">ergo</span>
+    <span> | </span>
+    <span id="spanText4">coats</span>
+    <span> | </span>
+    <span id="spanText5">bus</span>
+  </h1>
   <div class="container">
     <div class="clock-outer"></div>
       <div class="clock">
@@ -29,6 +36,18 @@
         <div class="number number10"><span>10</span></div>
         <div class="number number11"><span>11</span></div>
         <div class="number number12"><span>12</span></div>
+        <div class="Xnumber Xnumber0"><span>00</span></div>
+        <div class="Xnumber Xnumber5"><span>05</span></div>
+        <div class="Xnumber Xnumber10"><span>10</span></div>
+        <div class="Xnumber Xnumber15"><span>15</span></div>
+        <div class="Xnumber Xnumber20"><span>20</span></div>
+        <div class="Xnumber Xnumber25"><span>25</span></div>
+        <div class="Xnumber Xnumber30"><span>30</span></div>
+        <div class="Xnumber Xnumber35"><span>35</span></div>
+        <div class="Xnumber Xnumber40"><span>40</span></div>
+        <div class="Xnumber Xnumber45"><span>45</span></div>
+        <div class="Xnumber Xnumber50"><span>50</span></div>
+        <div class="Xnumber Xnumber55"><span>55</span></div>
         <div id="hour-hand" class="hand hour"></div>
         <div id="minute-hand" class="hand minute"></div>
         <div id="second-hand" class="hand second"></div>
@@ -37,6 +56,9 @@
         <div id="big-circle-overlay1"></div>
         <div id="big-circle-overlay2"></div>
         <div id="big-circle-overlay3"></div>
+        <div id="big-circle-overlay4"></div>
+        <div id="big-circle-overlay5"></div>
+        <div id="big-circle-overlay6"></div>
       </div>
     </div>
   </div>

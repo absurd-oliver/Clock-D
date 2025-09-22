@@ -2,33 +2,51 @@ body {
     padding: 25px;
 }
 
-select {
-  margin: 20px;
-}
-
-button {
-  margin: 20px;
-}
-
 .hidden {
     display: none;
+}
+
+.settings {
+    text-align: center;
+    margin: auto;
+}
+
+.settings button {
+    margin: 20px;
+    font-size: 50px;
+    width: 20vw;
+    height: 10vh;
+    border-radius: 50%;
+}
+
+#inputsSettings {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+#inputsSettings input{
+    height: 75px;
+    width: 50%;
+    margin: 25px;
+    font-size: 50px;
 }
 
 .clock-outer {
     width: 420px;
     height: 420px;
-    border: 15px solid;
+    border: 15px solid rgb(212, 212, 212);
     border-radius: 50%;
     position: relative;
-    background: rgb(67, 67, 67);
+    background: rgb(212, 212, 212);
 }
 
 .clock {
     width: 400px;
     height: 400px;
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 50%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'GillSansBold';
     position: absolute;
     background: #f1f1f1;
     z-index: 0;
@@ -39,10 +57,22 @@ button {
     justify-content: center;
     align-items: center;
     height: 80vh;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .clock .number {
+    --rotation: 0;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    bottom: 10%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 200%;
+}
+
+.clock .Xnumber {
     --rotation: 0;
     position: absolute;
     width: 100%;
@@ -99,6 +129,59 @@ button {
     --rotation: 360deg;
 }
 
+.clock .Xnumber0 {
+    --rotation: 360deg;
+}
+
+.clock .Xnumber5 {
+    --rotation: 30deg;
+}
+.clock .Xnumber10 {
+    --rotation: 60deg;
+}
+.clock .Xnumber15 {
+    --rotation: 90deg;
+}
+.clock .Xnumber20 {
+    --rotation: 120deg;
+}
+.clock .Xnumber25 {
+    --rotation: 150deg;
+}
+.clock .Xnumber30 {
+    --rotation: 180deg;
+}
+.clock .Xnumber35 {
+    --rotation: 210deg;
+}
+.clock .Xnumber40 {
+    --rotation: 240deg;
+}
+.clock .Xnumber45 {
+    --rotation: 270deg;
+}
+.clock .Xnumber50 {
+    --rotation: 300deg;
+}
+.clock .Xnumber55 {
+    --rotation: 330deg;
+}
+
+.Xnumber span{
+    background-color: rgb(255, 174, 174);
+    border-radius: 50%;
+    color: #000000;
+}
+
+input{
+    margin: 20px;
+    width: 20%;
+}
+
+button {
+    width: 10%;
+    height: 20px;
+}
 
 .clock .hand {
     --rotation: 10;
@@ -184,6 +267,42 @@ button {
   background: conic-gradient(rgb(0, 0, 0) 0%, transparent 0%);
 }
 
+#big-circle-overlay4 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  left: 50%;
+  bottom: 12.5%;
+  transform: translateX(-50%);
+  z-index: -5;
+  background: conic-gradient(rgb(0, 0, 0) 0%, transparent 0%);
+}
+
+#big-circle-overlay5 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  left: 50%;
+  bottom: 12.5%;
+  transform: translateX(-50%);
+  z-index: -6;
+  background: conic-gradient(rgb(0, 0, 0) 0%, transparent 0%);
+}
+
+#big-circle-overlay6 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  left: 50%;
+  bottom: 12.5%;
+  transform: translateX(-50%);
+  z-index: -7;
+  background: conic-gradient(rgb(0, 0, 0) 0%, transparent 0%);
+}
+
 .clock .hand.second {
     height: 48%;
     width: 3px;
@@ -239,4 +358,36 @@ button {
 
 .number11 {
     transform: rotate(330deg);
+}
+
+@font-face {
+    font-family: GillSansBold;
+    src: url('gill-sans-2/Gill Sans Bold.otf');
+}
+
+#spantexts {
+    position: absolute;
+    left: 25%;
+    background-color: #00000073;
+    text-align: center;
+    width: max-content;
+}
+
+#spanText0 {
+    background-color: #ff7474ff;
+}
+#spanText1 {
+    background-color: #91ff65ff;
+}
+#spanText2 {
+    background-color: #5ba2ffff;
+}
+#spanText3 {
+    background-color: #ff3773ff;
+}
+#spanText4 {
+    background-color: #e3ff65ff;
+}
+#spanText5 {
+    background-color: #5ba2ffff;
 }
