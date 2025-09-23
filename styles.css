@@ -25,7 +25,7 @@ body {
     width: 100%;
 }
 
-#inputsSettings input{
+#inputsSettings input {
     height: 75px;
     width: 50%;
     margin: 25px;
@@ -136,44 +136,54 @@ body {
 .clock .Xnumber5 {
     --rotation: 30deg;
 }
+
 .clock .Xnumber10 {
     --rotation: 60deg;
 }
+
 .clock .Xnumber15 {
     --rotation: 90deg;
 }
+
 .clock .Xnumber20 {
     --rotation: 120deg;
 }
+
 .clock .Xnumber25 {
     --rotation: 150deg;
 }
+
 .clock .Xnumber30 {
     --rotation: 180deg;
 }
+
 .clock .Xnumber35 {
     --rotation: 210deg;
 }
+
 .clock .Xnumber40 {
     --rotation: 240deg;
 }
+
 .clock .Xnumber45 {
     --rotation: 270deg;
 }
+
 .clock .Xnumber50 {
     --rotation: 300deg;
 }
+
 .clock .Xnumber55 {
     --rotation: 330deg;
 }
 
-.Xnumber span{
+.Xnumber span {
     background-color: rgb(255, 174, 174);
     border-radius: 50%;
     color: #000000;
 }
 
-input{
+input {
     margin: 20px;
     width: 20%;
 }
@@ -220,87 +230,87 @@ button {
 }
 
 #big-circle-overlay {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  left: 50%;
-  bottom: 25%;
-  transform: translateX(-50%);
-  z-index: -1;
-  background: #f1f1f1;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    left: 50%;
+    bottom: 25%;
+    transform: translateX(-50%);
+    z-index: -1;
+    background: #f1f1f1;
 }
 
 #big-circle-overlay1 {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  left: 50%;
-  bottom: 12.5%;
-  transform: translateX(-50%);
-  z-index: -2;
-  background: conic-gradient(rgb(0, 0, 0) 0%, transparent 0%);
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    left: 50%;
+    bottom: 12.5%;
+    transform: translateX(-50%);
+    z-index: -2;
+    background: conic-gradient(rgb(0, 0, 0) 0%, transparent 0%);
 }
 
 #big-circle-overlay2 {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  left: 50%;
-  bottom: 12.5%;
-  transform: translateX(-50%);
-  z-index: -3;
-  background: conic-gradient(rgb(0, 0, 0) 0%, transparent 0%);
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    left: 50%;
+    bottom: 12.5%;
+    transform: translateX(-50%);
+    z-index: -3;
+    background: conic-gradient(rgb(0, 0, 0) 0%, transparent 0%);
 }
 
 #big-circle-overlay3 {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  left: 50%;
-  bottom: 12.5%;
-  transform: translateX(-50%);
-  z-index: -4;
-  background: conic-gradient(rgb(0, 0, 0) 0%, transparent 0%);
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    left: 50%;
+    bottom: 12.5%;
+    transform: translateX(-50%);
+    z-index: -4;
+    background: conic-gradient(rgb(0, 0, 0) 0%, transparent 0%);
 }
 
 #big-circle-overlay4 {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  left: 50%;
-  bottom: 12.5%;
-  transform: translateX(-50%);
-  z-index: -5;
-  background: conic-gradient(rgb(0, 0, 0) 0%, transparent 0%);
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    left: 50%;
+    bottom: 12.5%;
+    transform: translateX(-50%);
+    z-index: -5;
+    background: conic-gradient(rgb(0, 0, 0) 0%, transparent 0%);
 }
 
 #big-circle-overlay5 {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  left: 50%;
-  bottom: 12.5%;
-  transform: translateX(-50%);
-  z-index: -6;
-  background: conic-gradient(rgb(0, 0, 0) 0%, transparent 0%);
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    left: 50%;
+    bottom: 12.5%;
+    transform: translateX(-50%);
+    z-index: -6;
+    background: conic-gradient(rgb(0, 0, 0) 0%, transparent 0%);
 }
 
 #big-circle-overlay6 {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  left: 50%;
-  bottom: 12.5%;
-  transform: translateX(-50%);
-  z-index: -7;
-  background: conic-gradient(rgb(0, 0, 0) 0%, transparent 0%);
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    left: 50%;
+    bottom: 12.5%;
+    transform: translateX(-50%);
+    z-index: -7;
+    background: conic-gradient(rgb(0, 0, 0) 0%, transparent 0%);
 }
 
 .clock .hand.second {
@@ -366,28 +376,33 @@ button {
 }
 
 #spantexts {
-    position: absolute;
-    left: 25%;
+    align-self: auto;
     background-color: #00000073;
     text-align: center;
     width: max-content;
+    max-width: 90vw;
 }
 
 #spanText0 {
     background-color: #ff7474ff;
 }
+
 #spanText1 {
     background-color: #91ff65ff;
 }
+
 #spanText2 {
     background-color: #5ba2ffff;
 }
+
 #spanText3 {
-    background-color: #ff3773ff;
+    background-color: rgb(158, 55, 255);
 }
+
 #spanText4 {
     background-color: #e3ff65ff;
 }
+
 #spanText5 {
-    background-color: #5ba2ffff;
+    background-color: rgb(246, 117, 255);
 }
